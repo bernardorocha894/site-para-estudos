@@ -1,0 +1,222 @@
+/* --- CONFIGURAÇÕES GERAIS --- */
+.explorar-container {
+  min-height: 100vh;
+  background-color: #fcfdfe;
+  font-family: 'Inter', sans-serif;
+  color: #1d1d1f;
+  padding-bottom: 60px;
+}
+
+/* --- NAVEGAÇÃO --- */
+.explorar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: white;
+  border-bottom: 1px solid #f0f0f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.btn-acesso {
+  padding: 12px 25px;
+  background: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-acesso:hover {
+  background: #0088cc;
+  transform: translateY(-2px);
+}
+
+/* --- CABEÇALHO DO TOUR --- */
+.explorar-header {
+  text-align: center;
+  padding: 80px 20px 40px;
+  background: linear-gradient(180deg, #f0faff 0%, #ffffff 100%);
+}
+
+.tag-doc {
+  background: #00aaff;
+  color: white;
+  padding: 6px 18px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.explorar-header h1 {
+  font-size: 3.2rem;
+  margin: 20px 0;
+  letter-spacing: -2px;
+}
+
+.explorar-header h1 span {
+  color: #00aaff;
+}
+
+.explorar-header p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* --- 1ª SEÇÃO: MATÉRIAS --- */
+.materias-section {
+  text-align: center;
+  padding: 60px 10%;
+}
+
+.materias-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.materias-section .sub {
+  color: #888;
+  margin-bottom: 40px;
+}
+
+.materias-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.materia-tag {
+  background: white;
+  border: 2px solid #eee;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #444;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.materia-tag:hover {
+  background: #00aaff;
+  color: white;
+  border-color: #00aaff;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 170, 255, 0.15);
+}
+
+/* --- 2ª SEÇÃO: FERRAMENTAS (CARDS) --- */
+.features-tour {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 28px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.04);
+  border: 1px solid #f0f0f0;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  border-color: #00aaff;
+  box-shadow: 0 20px 40px rgba(0, 170, 255, 0.1);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.feature-info h3 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #1d1d1f;
+}
+
+.feature-info p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* --- SEÇÃO FINAL (CTA) --- */
+.cta-tour {
+  padding: 80px 10% 40px;
+}
+
+.cta-inner {
+  background: #1d1d1f;
+  color: white;
+  padding: 60px 40px;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+}
+
+.cta-inner h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.btn-final-tour {
+  margin-top: 30px;
+  padding: 22px 50px;
+  background: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-final-tour:hover {
+  transform: scale(1.05);
+  background: #00c3ff;
+  box-shadow: 0 15px 30px rgba(0, 170, 255, 0.4);
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 1024px) {
+  .features-tour {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .explorar-header h1 {
+    font-size: 2.4rem;
+  }
+  
+  .feature-card {
+    min-width: 100%;
+  }
+
+  .cta-inner {
+    padding: 40px 20px;
+  }
+}

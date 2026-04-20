@@ -1,0 +1,279 @@
+/* --- RESET E GERAL --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-page-container {
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #1d1d1f;
+  overflow-x: hidden;
+}
+
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand-logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.brand-logo span {
+  color: #00aaff;
+}
+
+.auth-btns {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.link-btn:hover {
+  color: #00aaff;
+}
+
+.cta-small {
+  padding: 10px 20px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-small:hover {
+  background-color: #0088cc;
+  transform: translateY(-2px);
+}
+
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 8%;
+  gap: 50px;
+  min-height: calc(100vh - 80px);
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.mini-label {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #e6f7ff;
+  color: #00aaff;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 25px;
+  letter-spacing: -2px;
+}
+
+.hero-text h1 span {
+  color: #00aaff;
+}
+
+.hero-text p {
+  font-size: 1.15rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.cta-green {
+  padding: 18px 35px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+}
+
+.cta-green:hover {
+  background-color: #0088cc;
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 170, 255, 0.2);
+}
+
+
+.hero-banner {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.promo-card {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  padding: 40px;
+  border-radius: 32px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+  border: 1px solid #f0f0f0;
+  position: relative;
+}
+
+.card-tag {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  padding: 5px 12px;
+  color: white;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.card-content-animator {
+  animation: slideFade 0.6s ease-out;
+}
+
+@keyframes slideFade {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.promo-card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.check-list {
+  list-style: none;
+}
+
+.check-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: #444;
+}
+
+.check-list li span {
+  color: #00aaff;
+  font-weight: 900;
+}
+
+
+.footer-mini {
+  padding: 30px 8%;
+  border-top: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+.footer-content-mini {
+  display: flex;
+  justify-content: space-between;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 40px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.8rem;
+  }
+  
+  .hero-banner {
+    width: 100%;
+  }
+
+.slide-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: #00aaff;
+  width: 30px; 
+  border-radius: 10px;
+}
+
+.dot:hover {
+  background-color: #bbb;
+}
+
+
+.promo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px; 
+}
+}
+
+@media (max-width: 600px) {
+  .header-nav {
+    padding: 15px 5%;
+  }
+  
+  .auth-btns {
+    display: none; 
+  }
+  
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+}
