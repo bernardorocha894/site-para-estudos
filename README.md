@@ -1,5 +1,6 @@
 # Plataforma de Estudos para Concursos
 
+
 Projeto acadêmico desenvolvido com React com o objetivo de simular uma plataforma de cursos online.
 
 ## Funcionalidades
@@ -16,3 +17,4 @@ Projeto acadêmico desenvolvido com React com o objetivo de simular uma platafor
 
 ## Objetivo
 Projeto desenvolvido para prática de desenvolvimento frontend e construção de aplicações web modernas.
+Foco em Front-end
