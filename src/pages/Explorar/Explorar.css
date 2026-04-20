@@ -1,4 +1,4 @@
-/* --- CONFIGURAÇÕES GERAIS --- */
+
 .explorar-container {
   min-height: 100vh;
   background-color: #fcfdfe;
@@ -7,7 +7,7 @@
   padding-bottom: 60px;
 }
 
-/* --- NAVEGAÇÃO --- */
+
 .explorar-nav {
   display: flex;
   justify-content: space-between;
@@ -36,7 +36,7 @@
   transform: translateY(-2px);
 }
 
-/* --- CABEÇALHO DO TOUR --- */
+
 .explorar-header {
   text-align: center;
   padding: 80px 20px 40px;
@@ -70,7 +70,7 @@
   margin: 0 auto;
 }
 
-/* --- 1ª SEÇÃO: MATÉRIAS --- */
+
 .materias-section {
   text-align: center;
   padding: 60px 10%;
@@ -114,7 +114,7 @@
   box-shadow: 0 10px 20px rgba(0, 170, 255, 0.15);
 }
 
-/* --- 2ª SEÇÃO: FERRAMENTAS (CARDS) --- */
+
 .features-tour {
   display: flex;
   justify-content: center;
@@ -162,7 +162,7 @@
   font-size: 1rem;
 }
 
-/* --- SEÇÃO FINAL (CTA) --- */
+
 .cta-tour {
   padding: 80px 10% 40px;
 }
@@ -200,7 +200,7 @@
   box-shadow: 0 15px 30px rgba(0, 170, 255, 0.4);
 }
 
-/* --- RESPONSIVIDADE --- */
+
 @media (max-width: 1024px) {
   .features-tour {
     gap: 20px;
